@@ -134,7 +134,7 @@ Now we need to make a new file for the config
 	`nano global_conf.json`
 	
 Copy and paste from a window by right clicking onto the terminal from this paste bin
-	`https://pastebin.com/raw/ZFJg10hF`
+	`https://github.com/maco2035/DiyHeliumHotspots/blob/master/RAK2287/Raspberry%20Pi%203B%2B/global_conf.json`
 
 
 After it looks the same type `ctrl-x` (like copy in windows). And then `Y` and `enter`.
