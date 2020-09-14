@@ -97,7 +97,8 @@ Move into that folder by
 
 set up docker bu doing these comands
 
-BEFORE RUNING THAT MAKE SURE THAT YOU CHANGE THE miner-xxxNN_YYYY.MM.DD to the current one like miner-arm64_2020.09.04.0_GA. They are on quay.io/team-helium/miner. make sure to do arm64 for the pi. 
+*****BEFORE RUNING THAT MAKE SURE THAT YOU CHANGE THE miner-xxxNN_YYYY.MM.DD to the current one like miner-arm64_2020.09.04.0_GA. *****
+They are on quay.io/team-helium/miner. make sure to do arm64 for the pi. 
 
 docker run -d \
 --env REGION_OVERRIDE=US915 \
