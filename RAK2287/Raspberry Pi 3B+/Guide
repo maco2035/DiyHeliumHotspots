@@ -9,12 +9,12 @@ Then save it to the boot part of the pi.
 Edit the file name to "ssh"
 	You will need to turn on a windows setting to allow you to save "unstable" file names
 
-plug in the sd card to the pi, along with a ethernet, and the pi hat, and atennas
+Plug in the sd card to the pi, along with a ethernet, and the pi hat, and atennas
 
 open terminal on your computer.
 
 type this `ssh pi@iphere'
-	replace iphere with the ip that the pi is running at
+	replace iphere with the ip that the pi is running at, you can find this on the routers webpage
 
 the password is `raspberry'
 
