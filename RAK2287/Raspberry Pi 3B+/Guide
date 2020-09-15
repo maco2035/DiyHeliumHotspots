@@ -155,11 +155,17 @@ Now you have done everything!
 
 Check miner sync
 	 docker exec miner miner info height
-	
+	 
+	 
+AUTO UPDATE Script is done on this github
+https://github.com/Wheaties466/helium_miner_scripts
+
+
+
 Special thanks to Peraly Labs for the free delivery on the rak (everyone gets this)
 
 And the following for the help
-Skye#1284, alphamethod#0541, nopeburger#3637
+Skye#1284, alphamethod#0541, nopeburger#3637, Wheaties466#2588
 
 -maco2035
 (maco2035#6152 on discord and maco2035 on git)
