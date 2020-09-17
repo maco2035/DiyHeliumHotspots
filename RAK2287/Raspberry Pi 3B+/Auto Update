@@ -2,4 +2,14 @@ Auto upate.
 
 Please follow https://github.com/Wheaties466/helium_miner_scripts.
 
+
+Here is the commands
+
+cd
+git clone https://github.com/Wheaties466/helium_miner_scripts.git
+cd helium_miner_scripts
+chmod +x miner_latest.sh
+sudo touch /var/log/miner_latest.log
+./miner_latest.sh
+
 He does a a great job with this!
