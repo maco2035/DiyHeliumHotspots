@@ -146,6 +146,7 @@ to
         "serv_port_up": 1680,
         "serv_port_down": 1680,
 ```
++ Save the file by pressing CTRL-X, and then Y, and then Enter to save changes
 
 + Change the pins that reset the concentrator - `nano reset_lgw.sh`
 edit the first 2 lines to this
@@ -154,6 +155,8 @@ edit the first 2 lines to this
 SX1302_RESET_PIN=17	
 SX1302_POWER_EN_PIN=2
 ```
+
++ Save the file by pressing CTRL-X, and then Y, and then Enter to save changes
 
 + Add pi user to gpio group - `sudo usermod -aG gpio pi`
 
