@@ -102,13 +102,13 @@ Source: https://developer.helium.com/blockchain/run-your-own-miner
 
 ```
 sudo docker run -d \
-  env REGION_OVERRIDE=US915 \
-  restart always \
-  publish 1680:1680/udp \
-  publish 44158:44158/tcp \
-  name miner \
-  mount type=bind,source=/home/pi/miner_data,target=/var/data \
-quay.io/team-helium/miner:miner-xxxNN_YYYY.MM.DD.0_GA
+  --env REGION_OVERRIDE=US915 \
+  --restart always \
+  --publish 1680:1680/udp \
+  --publish 44158:44158/tcp \
+  --name miner \
+  --mount type=bind,source=/home/pi/miner_data,target=/var/data \
+  quay.io/team-helium/miner:miner-xxxNN_YYYY.MM.DD.0_GA
 ```
 
 + Verify that your container has started - `docker ps`
