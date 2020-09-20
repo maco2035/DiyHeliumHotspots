@@ -13,10 +13,10 @@ Plug in the sd card to the pi, along with a ethernet, and the pi hat, and atenna
 
 open terminal on your computer.
 
-type this `ssh pi@iphere'
+type this `ssh pi@iphere`
 	replace iphere with the ip that the pi is running at, you can find this on the routers webpage
 
-the password is `raspberry'
+the password is `raspberry`
 
 Now you have loaded the os on the pi3B+. 
 Update the pi with 'sudo apt upgrade' and 'sudo apt update'
@@ -117,7 +117,7 @@ make sure you have a 64gb file
 
 
 and Then clone the this repo
-	'git clone https://github.com/helium/sx1302_hal'
+	`git clone https://github.com/helium/sx1302_hal`
 
 Get into the folder
 	`cd sx1302_hal`
