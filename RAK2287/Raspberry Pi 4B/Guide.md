@@ -119,9 +119,24 @@ For maxium effort, set up port forwards on your internet router to the pi. Outsi
 
 + Make sure your are in your home directory - `cd ~`
 
-+ Clone the packet forwarer for sx1302 based gateways like the RAK2287 - `git clone https://github.com/helium/sx1302_hal`
++ Clone the packet forwarer for sx1302 based gateways like the RAK2287 - `git clone https://github.com/philltran/sx1302_hal.git`
 
 + Move to the project folder - `cd sx1302_hal`
+
++ If you do not want to have to put in your password a million times in the next step, you can create a ssh key in the sub steps below otherwise skip to the next step.
+    - Create the ssh key pair.
+
+    ```console
+    ssh-keygen -t rsa
+    ```
+    Press enter three times to accept the defaults.
+
+    - Set up your user to use the key pair.
+
+    ```console
+    ssh-copy-id -i ~/.ssh/id_rsa.pub pi@localhost
+    ```
+    You will need to enter your password.
 
 + Compile the project - `make clean all`
 
@@ -133,27 +148,6 @@ Note you can change parameters for this step in `target.cfg`
 + Move into bin directory - `cd bin`
 
 + Make a copy of the conf file for your reggion and name it as the default- `cp global_conf.json.sx1250.US915 global_conf.json`
-
-+ Change the port in the conf file via - `nano global_conf.json`
-Change this text that is close to the end of the file:
-```
-        "serv_port_up": 1730,
-        "serv_port_down": 1730,
-```
-to 
-
-```
-        "serv_port_up": 1680,
-        "serv_port_down": 1680,
-```
-
-+ Change the pins that reset the concentrator - `nano reset_lgw.sh`
-edit the first 2 lines to this
-
-```
-SX1302_RESET_PIN=17	
-SX1302_POWER_EN_PIN=2
-```
 
 + Add pi user to gpio group - `sudo usermod -aG gpio pi`
 
@@ -170,7 +164,7 @@ It's okay if you see an error for GPS. GPS is not used.
 
 
 ## Set up auto start scripts
-Source: https://github.com/helium/sx1302_hal/tree/helium/hotspot/tools/systemd
+Source: https://github.com/Lora-net/sx1302_hal/tree/master/tools/systemd
 
 + Create a systemd service script - `sudo nano /etc/systemd/system/lora_pkt_fwd.service`
 
