@@ -149,16 +149,6 @@ Note you can change parameters for this step in `target.cfg`
 
 + Make a copy of the conf file for your reggion and name it as the default- `cp global_conf.json.sx1250.US915 global_conf.json`
 
-+ Change the pins that reset the concentrator - `nano reset_lgw.sh`
-edit the first 2 lines to this
-
-```
-SX1302_RESET_PIN=17	
-SX1302_POWER_EN_PIN=2
-```
-
-+ Save the file by pressing CTRL-X, and then Y, and then Enter to save changes
-
 + Add pi user to gpio group - `sudo usermod -aG gpio pi`
 
 + Reboot for changes to take effect - `sudo reboot`
