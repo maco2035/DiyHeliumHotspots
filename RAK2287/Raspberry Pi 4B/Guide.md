@@ -123,6 +123,21 @@ For maxium effort, set up port forwards on your internet router to the pi. Outsi
 
 + Move to the project folder - `cd sx1302_hal`
 
++ If you do not want to have to put in your password a million times in the next step, you can create a ssh key in the sub steps below otherwise skip to the next step.
+    - Create the ssh key pair.
+
+    ```console
+    ssh-keygen -t rsa
+    ```
+    Press enter three times to accept the defaults.
+
+    - Set up your user to use the key pair.
+
+    ```console
+    ssh-copy-id -i ~/.ssh/id_rsa.pub pi@localhost
+    ```
+    You will need to enter your password.
+
 + Compile the project - `make clean all`
 
 + Make the executables - `make install`
