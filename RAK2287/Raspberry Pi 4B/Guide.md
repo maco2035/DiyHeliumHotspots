@@ -334,3 +334,50 @@ sudo reboot
 ```console
 tail /var/log/lora_pkt_fwd.log
 ```
+## Optional - Set up Miner autoupdate script
+Source: https://github.com/Wheaties466/helium_miner_scripts
+
++ Clone miner auto update script repo
+```console
+git clone https://github.com/Wheaties466/helium_miner_scripts.git
+```
+
++ CD into directory
+```console
+cd helium_miner_scripts/
+```
+
++ Make scripte executable
+```console
+chmod +x miner_latest.sh
+```
+
++ Make the log file
+```console
+sudo touch /var/log/miner_latest.log
+```
+
++ By default the script is configured for US915 frequencies. To use the miner in other regios like EU868 the script shall be changed by adding the --env REGION_OVERRIDE=EU868 to the line with docker run.
+
++ Run the script
+```console
+./miner_latest.sh
+```
+
++ Configure cron to run the script daily
+```console
+sudo crontab -e
+```
+
++ Choose "1" to make nano your editor of choice.
+
++ Add the following at the end of the text editor.
+
+```
+# Check for updates on miner image
+# Use whatever path you have your repo setup with.
+# If you need to test your cron you can use the following site and add "&& curl -s 'https://webhook.site/#!/~'" to the end of your cron and it will make a web request to your specific url when it completes.
+0 */4 * * * /home/pi/helium_miner_scripts/miner_latest.sh >> /var/log/miner_latest.log
+```
+
++ Save the file by pressing CTRL-X, and then Y, and then Enter to save changes
