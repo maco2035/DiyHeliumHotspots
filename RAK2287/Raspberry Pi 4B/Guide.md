@@ -204,7 +204,7 @@ make install_conf
 
 + Move into bin directory 
 ```console
-cd bin`
+cd bin
 ```
 
 + Make a copy of the conf file for your reggion and name it as the default
@@ -234,7 +234,7 @@ cd sx1302_hal/bin
 
 + Test out the packet forwarder 
 ```console
-./lora_pkt_fwd`
+./lora_pkt_fwd
 ```
 
 + Stop the packet forwarder by pressing CTRL-c
@@ -320,7 +320,7 @@ if $programname == 'lora_pkt_fwd' then ~
 + Restart the rsyslog service
 
 ```console
-sudo systemctl restart rsyslog`
+sudo systemctl restart rsyslog
 ```
 
 + Reboot for changes to take affect.
