@@ -1,0 +1,16 @@
+[Unit]
+Description=Lora Packet Forwarder
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStartPre=/home/pi/lora_gateway/reset_lgw.sh start 17
+ExecStart=/home/pi/packet_forwarder/lora_pkt_fwd/lora_pkt_fwd
+WorkingDirectory=/home/pi/packet_forwarder/lora_pkt_fwd
+StandardOutput=null
+StandardError=null
+Restart=on-failure
+User=pi
+
+[Install]
+WantedBy=multi-user.target
