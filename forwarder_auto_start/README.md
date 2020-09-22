@@ -1,4 +1,4 @@
-# Running miner as a service in Raspberry Pi OS or Ubuntu
+# Running packet forwarder as a service on Raspberry Pi OS or Ubuntu
 How to guide on running the miner as a service.
 To avoid filling up disk space, this service has any logging turned off.
 
