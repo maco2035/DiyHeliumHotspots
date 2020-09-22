@@ -7,7 +7,7 @@ Donations are welcome!
 #joeytank Thanks you!
 HNT donations to: 1367etyj5UnthZrK7AK4KJQwXdy9iYASHetCtSD8s6HkRNa8Asg
 
-1. Download lora-pkt-forwarder and save it to the '/etc/systemd/system' directory. This service will reset the GPIO pin as well as start the forwarder
+1. Download lora-pkt-fwd.service file and save it to the `/etc/systemd/system` directory. This service will reset the GPIO pin as well as start the forwarder
 
 2 - Reload the service daemon
 `sudo systemctl daemon-reload`
