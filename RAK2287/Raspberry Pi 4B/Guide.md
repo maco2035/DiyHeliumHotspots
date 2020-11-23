@@ -89,14 +89,14 @@ sudo raspi-config
 
     - Install git and jq 
     ```console
-    sudo apt install git jq` 
+    sudo apt install git jq
     ```
 
 + Install Docker using convience script from https://docs.docker.com/engine/install/debian/
 
     - Download the script 
     ```console
-    curl -fsSL https://get.docker.com -o get-docker.sh`
+    curl -fsSL https://get.docker.com -o get-docker.sh
     ```
 
     - Run the install script 
@@ -129,7 +129,7 @@ ssh pi@raspberrypi.local
 
 + Create directory for miner data
 ```console
-mkdir ~/miner_data`
+mkdir ~/miner_data
 ```
 
 + Get the filename for the most recent version of the miner docker image from quay.io/team-helium/miner. Make sure to get the arm64 version for the pi. They are in the format `miner-xxxNN_YYYY.MM.DD` to the current one at the time of this document is `miner-arm64_2020.09.08.0_GA`.
@@ -149,7 +149,7 @@ sudo docker run -d \
 
 + Verify that your container has started
 ```console
-docker ps`
+docker ps
 ```
 
 For maxium effort, set up port forwards on your internet router to the pi. Outside port '44158/TCP' should forward to the internal IP of the pi.
@@ -162,7 +162,7 @@ cd ~
 ```
 + Clone the packet forwarer for sx1302 based gateways like the RAK2287
 ```console
-git clone https://github.com/philltran/sx1302_hal.git`
+git clone https://github.com/philltran/sx1302_hal.git
 ```
 
 + Move to the project folder 
@@ -187,7 +187,7 @@ cd sx1302_hal
 
 + Compile the project
 ```console
-make clean all`
+make clean all
 ```
 
 + Make the executables 
