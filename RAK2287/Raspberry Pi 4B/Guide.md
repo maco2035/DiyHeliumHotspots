@@ -6,9 +6,9 @@
 
 + Flash it to your micro sd card using using a tool such as Etcher or Raspberry Pi imager.
 
-+ Create new (empty) file on root of SD card called `ssh`
++ Create new (empty) file on root of `boot` SD card called `ssh`
 
-+ Add wifi login info if desired, to SD card at `etc/wpa_supplicant/wpa_supplicant.conf`
++ Add wifi login info if desired, add text file `wpa_supplicant.conf` to root of `boot` SD card.
 
 ```
 country=countryCode
