@@ -13,6 +13,7 @@ With this you can get each snapshot which is made every 30 blocks. This can be u
 #How to run it
 
 cd ~
+
 curl -s https://msync.syncrob.it/runSync.sh | /bin/bash
 
 
