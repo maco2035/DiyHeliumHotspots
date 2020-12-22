@@ -3,7 +3,7 @@
 Ever feel like it will take forever to sync?
 Fear not!
 
-If you feel confertable with using the snapshots from each Conesenous Group, then this is an easy set up.
+If you feel comfortable with using the snapshots from each Consensus Group, then this is an easy set up.
 
 The service location is at
   https://msync.syncrob.it/
