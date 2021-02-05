@@ -1,4 +1,4 @@
-#Auto Block Height Sync
+  #Auto Block Height Sync
 
 Ever feel like it will take forever to sync?
 Fear not!
