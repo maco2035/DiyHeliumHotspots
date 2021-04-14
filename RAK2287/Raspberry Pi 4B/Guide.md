@@ -162,7 +162,7 @@ cd ~
 ```
 + Clone the packet forwarer for sx1302 based gateways like the RAK2287
 ```console
-git clone https://github.com/philltran/sx1302_hal.git
+git clone https://github.com/helium/sx1302_hal.git
 ```
 
 + Move to the project folder 
